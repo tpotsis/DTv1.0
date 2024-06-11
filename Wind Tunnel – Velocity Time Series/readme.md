@@ -2,7 +2,7 @@ The DT methodology involves generating and propagating turbulence wind flow repr
 
 ![image](https://github.com/tpotsis/DTv1.0/assets/124095044/66b2b3a5-0a24-49eb-bab9-7fe92ff74f02)
 
-##References
+## References
 ASCE/SEI 49-21, 2022. Wind Tunnel Testing for Buildings and Other Structures, American Society of Civil Engineers. https://doi.org/10.1061/9780784415740.
 
 Stathopoulos, T. (1984). Design and fabrication of a wind tunnel for building aerodynamics. Journal of Wind Engineering and Industrial Aerodynamics, 16(2–3), 361–376. https://doi.org/10.1016/0167-6105(84)90018-7
