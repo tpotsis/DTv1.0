@@ -21,6 +21,7 @@ The time series from OpenFOAM (probes function) are extracted for each computati
 Documentation and details can be found in [1], [2] and [4].
 ### References
 [1] Potsis, T., Stathopoulos, T., 2022. A Novel Computational Approach for an Improved Expression of the Spectral Content in the Lower Atmospheric Boundary Layer. Buildings 12(6). https://doi.org/10.3390/buildings12060788.
+
 [2] Potsis, T., & Stathopoulos, T. (2024). Wind induced peak pressures on low-rise building roofs via dynamic terrain computational methodology. Journal of Wind Engineering and Industrial Aerodynamics, 245, 105630. https://doi.org/10.1016/J.JWEIA.2023.105630
 
 [3] Potsis, T., Ricci, A., & Stathopoulos, T. (2024). On the reliability of the dynamic terrain method to generate ABL winds for environmental applications. Meccanica. https://doi.org/10.1007/s11012-024-01810-5
