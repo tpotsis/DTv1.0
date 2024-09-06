@@ -1,0 +1,102 @@
+/*---------------------------------------------------------------------------*\
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+| ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ |
+| ~                             Dynamic Terrain                             ~ |
+| ~     Modelling wind flow and wind-induced structural loads in the ABL    ~ |
+| ~                                  v1.0                                   ~ |
+| ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ |
+|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|
+\*---------------------------------------------------------------------------*/
+
+
+//Inlfer Frequency
+inlet_frequency 5000
+//Time to start writing data
+time_start 0
+//Time to stop writing data
+time_end 0.01
+
+//Write turbulence
+write no
+
+//Directory of Wind Tunnel Velocity Time Series Database
+wind_tunnel /home/potsis/projects/def-statho/potsis/Urban_PO
+number_of_control_points 22
+
+//Inlet directory of case
+case /home/potsis/scratch/2024/TPUNI_12o12_r01_400/constant/boundaryData/inlet
+
+//Include V data 
+include_v yes
+
+//Include W data
+include_w yes
+
+//Number of uniformly placed inlet lines in the y-axis
+inlet_nLines 11
+
+//Uniform profile in y-axis
+uniform_y yes
+
+
+////////////////////////////////////////////
+///////////MODIFICATION OF Mean U////////////
+////////////////////////////////////////////
+//modification_mean none
+
+//modification_mean user_defined
+//user_defined_directory_mean /home/potsis/projects/def-statho/potsis/Serious/LMM_U
+
+modification_mean linear
+targetProfileU_directory /home/potsis/projects/def-statho/potsis/Serious/TargetU
+results_U0_directory /home/potsis/scratch/2024/TPUNI_12o12_r01_400/postProcessing1/probesIncident/0/U
+number_of_probes_in_U0 22
+
+
+////////////////////////////////////////////
+///////////MODIFICATION OF RMS U////////////
+////////////////////////////////////////////
+//modification_rms none
+
+//modification_rms user_defined
+//user_defined_directory_rms /home/potsis/projects/def-statho/potsis/Serious/LMM_Urms
+
+
+modification_rms linear
+//modification_rms nonlinear
+targetProfileUrms_directory /home/potsis/projects/def-statho/potsis/Serious/TargetUrms
+results_U0rms_directory /home/potsis/scratch/2024/TPUNI_12o12_r01_400/postProcessing2/probesIncident/0/U
+
+
+////////////////////////////////////////////
+///////////MODIFICATION OF RMS V////////////
+////////////////////////////////////////////
+modification_rmsV yes
+
+//modification_rmsV user_defined
+//user_defined_directory_rmsV /home/potsis/projects/def-statho/potsis/Serious/LMM_Urms
+
+
+//modification_rmsV linear
+//modification_rmsV nonlinear
+//targetProfileUrmsV_directory /home/potsis/projects/def-statho/potsis/Serious/TargetUrmsV
+//results_U0rms_directoryV /home/potsis/projects/def-statho/potsis/DT_Urb6250_Stage1/postProcessingM0Stage1.1/probes/0/U
+
+////////////////////////////////////////////
+///////////MODIFICATION OF RMS W////////////
+////////////////////////////////////////////
+modification_rmsW yes
+
+//modification_rmsW user_defined
+//user_defined_directory_rmsW /home/potsis/projects/def-statho/potsis/Serious/LMM_Urms
+
+
+//modification_rmsW linear
+//modification_rmsW nonlinear
+//targetProfileUrmsW_directory /home/potsis/projects/def-statho/potsis/Serious/TargetUrms
+//results_U0rms_directory /home/potsis/projects/def-statho/potsis/DT_Urb6250_Stage1/postProcessingM0Stage1.1/probes/0/U
+
+
+//Check mean and rms profiles
+
+//Run with building
