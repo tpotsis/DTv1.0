@@ -130,7 +130,7 @@ int main() {
      cout << timeNumbers.size()<<" became "<< timeStep.size()<<endl;
     int ntaps = 256;
     ofstream out_file;
-    out_file.open("/home/potsis/projects/def-statho/potsis/Pressures/p_NITPU_oldTest");
+    out_file.open("/home/potsis/projects/def-statho/potsis/Pressures/p_FINAL");
     out_file.precision(7);
      for (int k = 0; k < timeStepF.size()-1; k++) {
              out_file << timeStepF[k] <<" ";
