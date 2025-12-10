@@ -26,6 +26,7 @@ Documentation and details can be found in [1], [2] and [4].
 
 [3] Potsis, T., Ricci, A., & Stathopoulos, T. (2024). On the reliability of the dynamic terrain method to generate ABL winds for environmental applications. Meccanica. https://doi.org/10.1007/s11012-024-01810-5
 
+[4] Potsis, T., & Stathopoulos, T. (2026). Wind flow and wind loading by using the Dynamic Terrain approach. Journal of Wind Engineering and Industrial Aerodynamics, 268, 106295. https://doi.org/10.1016/J.JWEIA.2025.106295
 
 For Question and Support contact: potsis.theodore@gmailcom
 
